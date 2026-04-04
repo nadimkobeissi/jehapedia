@@ -1,0 +1,41 @@
+{{ define "main" }}
+<article class="story-single">
+	<div class="story-frame">
+		<div class="story-header">
+			<div class="story-ornament">❖ ❖</div>
+			<h1 class="story-title">{{ .Title }}</h1>
+			<div class="story-ornament">❖ ❖</div>
+			{{ with .Params.tags }}
+			<div class="story-tags">
+				{{ range . }}
+				<span class="story-tag">{{ . }}</span>
+				{{ end }}
+			</div>
+			{{ end }}
+		</div>
+		<div class="story-body">
+			{{ .Content }}
+		</div>
+		<div class="story-footer-ornament">
+			✦ ✦ ✦
+		</div>
+	</div>
+
+	<nav class="story-nav">
+		{{ with .PrevInSection }}
+		<a href="{{ .RelPermalink }}" class="story-nav-link story-nav-prev">
+			<span class="nav-arrow">→</span>
+			<span class="nav-label">الحكاية السابقة</span>
+			<span class="nav-title">{{ .Title }}</span>
+		</a>
+		{{ end }}
+		{{ with .NextInSection }}
+		<a href="{{ .RelPermalink }}" class="story-nav-link story-nav-next">
+			<span class="nav-arrow">←</span>
+			<span class="nav-label">الحكاية التالية</span>
+			<span class="nav-title">{{ .Title }}</span>
+		</a>
+		{{ end }}
+	</nav>
+</article>
+{{ end }}

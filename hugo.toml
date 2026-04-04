@@ -1,0 +1,21 @@
+baseURL = 'https://jehapedia.org/'
+languageCode = 'ar'
+title = 'جِحَابيديا'
+theme = 'alf-layla'
+defaultContentLanguage = 'ar'
+
+[params]
+  description = 'موسوعة نوادر جحا'
+  descriptionEn = 'Encyclopedia of Juha Tales'
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
+[pagination]
+  pagerSize = 12
+
+[caches]
+  [caches.images]
+    dir = ':cacheDir/images'

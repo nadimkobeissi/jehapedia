@@ -1,0 +1,25 @@
+{{ define "main" }}
+<section class="page-header">
+	<h2 class="page-title">{{ .Title }}</h2>
+	{{ with .Params.description }}
+	<p class="page-desc">{{ . }}</p>{{ end }}
+</section>
+
+<section class="stories-grid-section">
+	<div class="stories-grid">
+		{{ range .Pages.ByDate.Reverse }}
+		<article class="story-card">
+			<a href="{{ .RelPermalink }}" class="story-card-link">
+				<div class="card-arch"></div>
+				<div class="card-content">
+					<h3 class="card-title">{{ .Title }}</h3>
+					<div class="card-divider">— ◆ —</div>
+					<p class="card-excerpt">{{ .Summary | truncate 120 }}</p>
+					<span class="card-read-more">اقرأ الحكاية ←</span>
+				</div>
+			</a>
+		</article>
+		{{ end }}
+	</div>
+</section>
+{{ end }}

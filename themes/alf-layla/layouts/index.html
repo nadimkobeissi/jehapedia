@@ -1,0 +1,36 @@
+{{ define "main" }}
+
+<!--
+<section class="hero">
+  <div class="hero-frame">
+    <div class="hero-ornament-top">❖ ━━━━━━━━━ ❖</div>
+    <h2 class="hero-title">حكايات جحا</h2>
+    <p class="hero-desc">نوادر وطرائف من التراث العربي، بحروفٍ عربيّة جميلة<br>وترجمة إنجليزيّة لكلّ حكاية</p>
+    <div class="hero-ornament-bottom">❖ ━━━━━━━━━ ❖</div>
+  </div>
+</section>
+-->
+
+<section class="stories-grid-section">
+	<h2 class="section-title">
+		<span class="section-title-ornament">✦</span>
+		الحكايات
+		<span class="section-title-ornament">✦</span>
+	</h2>
+	<div class="stories-grid">
+		{{ range (where .Site.RegularPages "Section" "stories").ByDate.Reverse }}
+		<article class="story-card">
+			<a href="{{ .RelPermalink }}" class="story-card-link">
+				<div class="card-arch"></div>
+				<div class="card-content">
+					<h3 class="card-title">{{ .Title }}</h3>
+					<div class="card-divider">— ◆ —</div>
+					<p class="card-excerpt">{{ .Summary | truncate 120 }}</p>
+					<span class="card-read-more">اقرأ الحكاية ←</span>
+				</div>
+			</a>
+		</article>
+		{{ end }}
+	</div>
+</section>
+{{ end }}

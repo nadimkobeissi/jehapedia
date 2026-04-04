@@ -1,0 +1,9 @@
+name = "Alf Layla"
+license = "MIT"
+licenselink = "https://github.com/yourname/alf-layla/blob/master/LICENSE"
+description = "A beautiful Arabic-first theme inspired by One Thousand and One Nights"
+tags = ["arabic", "rtl", "bilingual", "calligraphy"]
+min_version = "0.120.0"
+
+[author]
+  name = "Jehapedia"
