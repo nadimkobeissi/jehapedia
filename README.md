@@ -1,0 +1,28 @@
+# Jehapedia
+
+Jehapedia is a public encyclopedia of stories of Jeha, the legendary jester-like figure in Arabic folklore.
+
+Jehapedia will catalogue Jeha stories in Arabic, alongside English translations written by Nadim Kobeissi.
+
+## Status
+
+I am currently in the initial stages of work on this project. Todo list:
+
+- [ ] Basic website and layout with Hugo as an engine.
+- [ ] Render an initial story in Arabic script, with English translation.
+- [ ] Render an additional story and work on navigation (next/previous story, search stories...)
+- [ ] Test layout on desktop and mobile.
+- [ ] Graphics such as favicon, iOS Home Screen icon, and so on.
+- [ ] Add a handful more stories.
+- [ ] General polish of the layout.
+- [ ] Finish populating the website with several dozen stories.
+
+## Author
+
+Jehapedia is created by [Nadim Kobeissi](https://nadim.computer). The original Arabic stories are sourced from various references and have essentially been handed down through folklore for hundreds of years, but all English translations are original hand-translations also by Nadim Kobeissi.
+
+## License
+
+All Jeha stories, in Arabic, are public domain.
+
+Jehapedia and all English translations are © 2026 by Nadim Kobeissi and licensed under CC BY-NC-ND 4.0. To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-nd/4.0/
