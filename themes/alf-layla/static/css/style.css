@@ -740,8 +740,8 @@ h4 {
 .story-body {
 	padding: 2.5rem 3.5rem 2rem;
 	color: var(--text-dark);
-	font-size: 1.45rem;
-	line-height: 1.9;
+	font-size: 1.5rem;
+	line-height: 2.2;
 	letter-spacing: 0.01em;
 	word-spacing: 0.08em;
 	position: relative;
@@ -1041,6 +1041,8 @@ h4 {
 
 	.story-body {
 		padding: 1.5rem 1.5rem 1rem;
+		font-size: 1.8em;
+		line-height: 2.3;
 	}
 
 	.story-title {
@@ -1053,25 +1055,6 @@ h4 {
 
 	.story-nav {
 		flex-direction: column;
-	}
-}
-
-@media (max-width: 480px) {
-	.site-title {
-		font-size: 2rem;
-	}
-
-	.hero-title {
-		font-size: 1.6rem;
-	}
-
-	.story-body {
-		padding: 1.2rem 1rem 1rem;
-		font-size: 1.05rem;
-	}
-
-	.card-content {
-		padding: 1.5rem 1.3rem;
 	}
 }
 
