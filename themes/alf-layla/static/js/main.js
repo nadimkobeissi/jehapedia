@@ -10,8 +10,8 @@ function toggleTranslation(button) {
 
 	const textSpan = button.querySelector('.toggle-text');
 	if (isVisible) {
-		textSpan.textContent = 'أظهر الترجمة الإنجليزية — Show English Translation';
+		textSpan.textContent = 'Show English Translation';
 	} else {
-		textSpan.textContent = 'أخفِ الترجمة الإنجليزية — Hide English Translation';
+		textSpan.textContent = 'Hide English Translation';
 	}
 }
