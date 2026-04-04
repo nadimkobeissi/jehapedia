@@ -586,18 +586,10 @@ h4 {
 
 .card-title {
 	font-family: 'Aref Ruqaa', serif;
-	font-size: 1.5rem;
+	font-size: 1.8rem;
 	color: var(--burgundy);
 	line-height: 1.5;
 	margin-bottom: 0.3rem;
-}
-
-.card-title-en {
-	font-family: 'Cormorant Garamond', 'Georgia', serif;
-	font-size: 0.95rem;
-	color: var(--text-medium);
-	font-style: italic;
-	margin-bottom: 0.5rem;
 }
 
 .card-divider {
@@ -704,18 +696,10 @@ h4 {
 
 .story-title {
 	font-family: 'Aref Ruqaa', serif;
-	font-size: 2.5rem;
+	font-size: 4rem;
 	color: var(--burgundy);
-	margin: 0.8rem 0 0.3rem;
+	margin: 0.3rem 0 0.8rem;
 	line-height: 1.4;
-}
-
-.story-title-en {
-	font-family: 'Cormorant Garamond', 'Georgia', serif;
-	font-size: 1.15rem;
-	color: var(--text-medium);
-	font-style: italic;
-	margin-bottom: 0.8rem;
 }
 
 .story-tags {
@@ -1046,7 +1030,7 @@ h4 {
 	}
 
 	.story-title {
-		font-size: 1.8rem;
+		font-size: 4rem;
 	}
 
 	.story-header {
