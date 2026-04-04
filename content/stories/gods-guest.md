@@ -24,7 +24,9 @@ A man came and knocked on Jeha's door. Jeha's wife opened the door and asked him
 
 "I am the guest of God!", the man cried, meaning that he was a beggar.
 
-Hearing this, Jeha immediately left his house and bade the man to follow him, until they arrived in front of the mosque, at which point Jeha announced: "O guest of God, behold the house of God!"
+Hearing this, Jeha immediately left his house and bade the man to follow him, until they arrived in front of the mosque.
+
+At that point, Jeha announced: "O guest of God, behold the house of God!"
 
 Then he left him there.
 
