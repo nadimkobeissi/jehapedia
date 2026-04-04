@@ -5,9 +5,12 @@ theme = 'alf-layla'
 defaultContentLanguage = 'ar'
 enableRobotsTXT = false
 
+[taxonomies]
+  tag = 'tags'
+
 [params]
   description = 'موسوعة نوادر جحا'
-  descriptionEn = 'Encyclopedia of Juha Tales'
+  descriptionEn = 'Encyclopedia of Jeha Tales'
 
 [markup]
   [markup.goldmark]

@@ -24,7 +24,7 @@
   <!-- Subtitle -->
   <text x="600" y="380" text-anchor="middle" font-family="serif" font-size="32" fill="#f5deb3" opacity="0.7" direction="rtl">موسوعة نوادر جحا</text>
   <!-- English subtitle -->
-  <text x="600" y="430" text-anchor="middle" font-family="serif" font-size="24" fill="#f5deb3" opacity="0.4" font-style="italic">Encyclopedia of Juha Tales</text>
+  <text x="600" y="430" text-anchor="middle" font-family="serif" font-size="24" fill="#f5deb3" opacity="0.4" font-style="italic">Encyclopedia of Jeha Tales</text>
   <!-- Bottom line -->
   <text x="600" y="560" text-anchor="middle" font-family="serif" font-size="20" fill="#d4a853" opacity="0.3">jehapedia.org</text>
 </svg>

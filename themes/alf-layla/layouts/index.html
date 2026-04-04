@@ -1,15 +1,22 @@
 {{ define "main" }}
+{{ $stories := (where .Site.RegularPages "Section" "stories").ByDate.Reverse }}
 
-<!--
 <section class="hero">
-  <div class="hero-frame">
-    <div class="hero-ornament-top">❖ ━━━━━━━━━ ❖</div>
-    <h2 class="hero-title">حكايات جحا</h2>
-    <p class="hero-desc">نوادر وطرائف من التراث العربي، بحروفٍ عربيّة جميلة<br>وترجمة إنجليزيّة لكلّ حكاية</p>
-    <div class="hero-ornament-bottom">❖ ━━━━━━━━━ ❖</div>
-  </div>
+	<div class="hero-frame">
+		<div class="hero-ornament-top">❖ ━━━━━━━━━ ❖</div>
+		<h2 class="hero-title">حكايات جحا</h2>
+		<p class="hero-desc">
+			جُحَا شخصيّةٌ أسطوريّة من التراث العربي، اشتُهِرَ بِنوادِرِهِ وطَرائِفِهِ<br>
+			التي تَجمَعُ بَيْنَ الذَّكاءِ والسُّخْريَةِ والحِكْمَةِ العميقة.
+		</p>
+		<p class="hero-desc-en">
+			Jeha is a legendary figure of Arab folklore, celebrated for his wit,<br>
+			his cunning, and his timeless wisdom dressed in humor.
+		</p>
+		<div class="hero-story-count">{{ len $stories }} حكاية</div>
+		<div class="hero-ornament-bottom">❖ ━━━━━━━━━ ❖</div>
+	</div>
 </section>
--->
 
 <section class="stories-grid-section">
 	<h2 class="section-title">
@@ -18,14 +25,14 @@
 		<span class="section-title-ornament">✦</span>
 	</h2>
 	<div class="stories-grid">
-		{{ range (where .Site.RegularPages "Section" "stories").ByDate.Reverse }}
+		{{ range $stories }}
 		<article class="story-card">
 			<a href="{{ .RelPermalink }}" class="story-card-link">
 				<div class="card-arch"></div>
 				<div class="card-content">
 					<h3 class="card-title">{{ .Title }}</h3>
 					<div class="card-divider">— ◆ —</div>
-					<p class="card-excerpt">{{ .Summary | truncate 120 }}</p>
+					<p class="card-excerpt">{{ with .Params.description }}{{ . }}{{ else }}{{ .Summary | plainify | truncate 200 }}{{ end }}</p>
 					<span class="card-read-more">اقرأ الحكاية ←</span>
 				</div>
 			</a>

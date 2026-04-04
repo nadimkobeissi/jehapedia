@@ -1,5 +1,11 @@
 {{ define "main" }}
 <article class="story-single">
+	<div class="story-back">
+		<a href="/stories/" class="story-back-link">
+			<span class="back-arrow">→</span>
+			<span>العودة إلى الحكايات</span>
+		</a>
+	</div>
 	<div class="story-frame">
 		<div class="story-header">
 			<div class="story-ornament">❖ ❖</div>
@@ -8,7 +14,7 @@
 			{{ with .Params.tags }}
 			<div class="story-tags">
 				{{ range . }}
-				<span class="story-tag">{{ . }}</span>
+				<a href="{{ "/tags/" | relURL }}{{ . | urlize }}/" class="story-tag">{{ . }}</a>
 				{{ end }}
 			</div>
 			{{ end }}

@@ -1,8 +1,7 @@
 {{ define "main" }}
 <section class="page-header">
 	<h2 class="page-title">{{ .Title }}</h2>
-	{{ with .Params.description }}
-	<p class="page-desc">{{ . }}</p>{{ end }}
+	<p class="page-desc">حكايات في موضوع «{{ .Title }}»</p>
 </section>
 
 <section class="stories-grid-section">
