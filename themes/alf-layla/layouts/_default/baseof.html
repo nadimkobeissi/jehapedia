@@ -1,34 +1,37 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
+
 <head>
-  {{- partial "head.html" . -}}
+	{{- partial "head.html" . -}}
 </head>
+
 <body>
-  <div class="night-sky">
-    <div class="moon"></div>
-    <div class="cloud">
-      <div class="cloud-puff c1"></div>
-      <div class="cloud-puff c2"></div>
-      <div class="cloud-puff c3"></div>
-      <div class="cloud-puff c4"></div>
-    </div>
-    <div class="cloud cloud-2">
-      <div class="cloud-puff c1"></div>
-      <div class="cloud-puff c2"></div>
-      <div class="cloud-puff c3"></div>
-    </div>
-    <div class="star star-1"></div>
-    <div class="star star-2"></div>
-    <div class="star star-3"></div>
-    <div class="star star-4"></div>
-    <div class="star star-5"></div>
-    <div class="star star-6"></div>
-  </div>
-  {{- partial "header.html" . -}}
-  <main>
-    {{- block "main" . }}{{- end }}
-  </main>
-  {{- partial "footer.html" . -}}
-  <script src="/js/main.js"></script>
+	<div class="night-sky">
+		<div class="moon"></div>
+		<div class="cloud">
+			<div class="cloud-puff c1"></div>
+			<div class="cloud-puff c2"></div>
+			<div class="cloud-puff c3"></div>
+			<div class="cloud-puff c4"></div>
+		</div>
+		<div class="cloud cloud-2">
+			<div class="cloud-puff c1"></div>
+			<div class="cloud-puff c2"></div>
+			<div class="cloud-puff c3"></div>
+		</div>
+		<div class="star star-1"></div>
+		<div class="star star-2"></div>
+		<div class="star star-3"></div>
+		<div class="star star-4"></div>
+		<div class="star star-5"></div>
+		<div class="star star-6"></div>
+	</div>
+	{{- partial "header.html" . -}}
+	<main>
+		{{- block "main" . }}{{- end }}
+	</main>
+	{{- partial "footer.html" . -}}
+	<script src="/js/main.js"></script>
 </body>
+
 </html>
