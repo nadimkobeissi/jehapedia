@@ -14,8 +14,8 @@ I am currently in the initial stages of work on this project. Todo list:
 - [x] Test layout on desktop and mobile.
 - [x] Graphics such as favicon, iOS Home Screen icon, OpenGraph, and so on.
 - [x] Add a handful more stories.
-- [ ] General polish of the layout.
-- [ ] Finish populating the website with several dozen stories.
+- [x] General polish of the layout.
+- [x] Finish populating the website with several dozen stories.
 - [ ] Add search?
 
 ## Author
