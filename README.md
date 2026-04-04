@@ -11,7 +11,7 @@ I am currently in the initial stages of work on this project. Todo list:
 - [x] Basic website and layout with Hugo as an engine.
 - [x] Render an initial story in Arabic script, with English translation.
 - [x] Render an additional story and work on navigation (next/previous story...)
-- [ ] Test layout on desktop and mobile.
+- [x] Test layout on desktop and mobile.
 - [ ] Graphics such as favicon, iOS Home Screen icon, OpenGraph, and so on.
 - [ ] Add a handful more stories.
 - [ ] General polish of the layout.

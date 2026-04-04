@@ -3,6 +3,7 @@ languageCode = 'ar'
 title = 'جِحَابيديا'
 theme = 'alf-layla'
 defaultContentLanguage = 'ar'
+enableRobotsTXT = false
 
 [params]
   description = 'موسوعة نوادر جحا'
@@ -19,3 +20,17 @@ defaultContentLanguage = 'ar'
 [caches]
   [caches.images]
     dir = ':cacheDir/images'
+
+[sitemap]
+  changefreq = 'weekly'
+  filename = 'sitemap.xml'
+  priority = 0.5
+
+[outputs]
+  home = ['HTML', 'RSS']
+  section = ['HTML', 'RSS']
+
+[outputFormats]
+  [outputFormats.RSS]
+    mediaType = 'application/rss+xml'
+    baseName = 'feed'
