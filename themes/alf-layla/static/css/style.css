@@ -1124,6 +1124,80 @@ h4 {
 	color: var(--burgundy);
 }
 
+/* ── Share Menu ─────────────────────────────────────── */
+.share-menu {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 1rem;
+	padding: 0 2rem 2rem;
+}
+
+.share-label {
+	font-family: 'Aref Ruqaa', serif;
+	font-size: 0.95rem;
+	color: var(--gold-dark);
+	opacity: 0.5;
+}
+
+.share-buttons {
+	display: flex;
+	gap: 0.5rem;
+	align-items: center;
+}
+
+.share-btn {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 36px;
+	height: 36px;
+	border-radius: 50%;
+	background: rgba(212, 168, 83, 0.08);
+	border: 1px solid rgba(212, 168, 83, 0.15);
+	color: var(--gold-dark);
+	opacity: 0.5;
+	text-decoration: none;
+	cursor: pointer;
+	transition: all 0.3s ease;
+}
+
+.share-btn:hover {
+	opacity: 1;
+	background: rgba(212, 168, 83, 0.15);
+	border-color: rgba(212, 168, 83, 0.35);
+	transform: translateY(-1px);
+}
+
+.share-btn svg {
+	width: 16px;
+	height: 16px;
+}
+
+.share-copy {
+	position: relative;
+	font-family: inherit;
+}
+
+.share-copy .share-copy-check {
+	display: none;
+	color: var(--emerald);
+}
+
+.share-copy.copied .share-copy-check {
+	display: block;
+}
+
+.share-copy.copied svg:first-child {
+	display: none;
+}
+
+.share-copy.copied {
+	opacity: 1;
+	border-color: var(--emerald);
+	background: rgba(26, 107, 90, 0.1);
+}
+
 /* ── Story Navigation ───────────────────────────────── */
 .story-nav {
 	display: flex;
