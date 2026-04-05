@@ -13,20 +13,20 @@ original: true
 
 قَالَ جُحَا:
 
-— رَائِعٌ. وَمَاذَا يَعْمَلُ؟
+— وَمَاذَا يَعْمَلُ؟
 
-— كَيْفَ يَعْنِي مَاذَا يَعْمَلُ؟ يَتَكَلَّمُ ثَلَاثَ لُغَاتٍ!
+— يَتَكَلَّمُ ثَلَاثَ لُغَاتٍ!
 
-— نَعَمْ، وَلَكِنْ مَاذَا يَقُولُ بِهَا؟
+— مَاذَا يَقُولُ بِهَا؟
 
 {{% english %}}
 
 A man bragged to Jeha at the café: "My son is studying in the capital. He speaks three languages, reads philosophy, and writes poetry!"
 
-"Wonderful," said Jeha. "And what does he do?"
+Jeha said: "What does he do?"
 
-"What do you mean, what does he do? He speaks three languages!"
+"He speaks three languages!"
 
-"Yes, but what does he say in them?"
+"What does he say in them?"
 
 {{% /english %}}
