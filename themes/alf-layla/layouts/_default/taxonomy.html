@@ -12,6 +12,7 @@
 				<div class="card-arch"></div>
 				<div class="card-content">
 					<h3 class="card-title">{{ .Title }}</h3>
+					{{ if .Params.original }}<span class="card-original-star" title="قصّة أصليّة">★</span>{{ end }}
 					<div class="card-divider">— ◆ —</div>
 					<p class="card-excerpt">{{ with .Params.description }}{{ . }}{{ else }}{{ .Summary | plainify | truncate 200 }}{{ end }}</p>
 					<span class="card-read-more">اقرأ الحكاية ←</span>

@@ -4,6 +4,7 @@ title_en: "Why Jeha Carried His Front Door to the Market"
 date: 2026-04-04T11:11:00+00:00
 tags: ["الجهل", "الزوجة"]
 description: "زوجة جحا تطلب منه أن يأخذ باله من الباب"
+original: true
 ---
 
 خَرَجَ جُحَا مِنْ بَيْتِهِ ذَاتَ صَبَاحٍ فَنَادَتْهُ زَوْجَتُهُ:
