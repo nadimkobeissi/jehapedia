@@ -10,7 +10,7 @@ enableRobotsTXT = false
 
 [params]
   description = 'موسوعة نوادر جحا'
-  descriptionEn = 'Encyclopedia of Jeha Tales'
+  descriptionEn = 'The Jeha Encyclopedia'
 
 [markup]
   [markup.goldmark]
