@@ -1,18 +1,3 @@
-function toggleTheme() {
-	const body = document.body;
-	const isLight = body.classList.toggle('light-mode');
-	localStorage.setItem('jehapedia-theme', isLight ? 'light' : 'dark');
-	document.querySelector('.theme-toggle-icon').textContent = isLight ? '☽' : '☀';
-}
-
-(function () {
-	if (localStorage.getItem('jehapedia-theme') === 'light') {
-		document.body.classList.add('light-mode');
-		var icon = document.querySelector('.theme-toggle-icon');
-		if (icon) icon.textContent = '☽';
-	}
-})();
-
 function toggleTranslation(button) {
 	const section = button.closest('.translation-section');
 	const content = section.querySelector('.translation-content');
