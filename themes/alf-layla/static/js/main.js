@@ -22,12 +22,15 @@ function toggleTranslation(button) {
 	const emptyMsg = document.getElementById('search-empty');
 	if (!searchInput || !resultsGrid) return;
 
-	let stories = [];
+	let stories = null;
 
-	fetch('/index.json')
-		.then(r => r.json())
-		.then(data => { stories = data; })
-		.catch(() => {});
+	function ensureStories() {
+		if (stories !== null) return Promise.resolve();
+		return fetch('/index.json')
+			.then(r => r.json())
+			.then(data => { stories = data; })
+			.catch(() => { stories = []; });
+	}
 
 	function renderCard(story) {
 		const star = story.original
@@ -55,19 +58,21 @@ function toggleTranslation(button) {
 			return;
 		}
 
-		const matches = stories.filter(function (s) {
-			return s.title.toLowerCase().includes(query) ||
-				(s.title_en && s.title_en.toLowerCase().includes(query)) ||
-				(s.description && s.description.toLowerCase().includes(query)) ||
-				(s.tags && s.tags.some(function (t) { return t.toLowerCase().includes(query); }));
-		});
+		ensureStories().then(function () {
+			const matches = stories.filter(function (s) {
+				return s.title.toLowerCase().includes(query) ||
+					(s.title_en && s.title_en.toLowerCase().includes(query)) ||
+					(s.description && s.description.toLowerCase().includes(query)) ||
+					(s.tags && s.tags.some(function (t) { return t.toLowerCase().includes(query); }));
+			});
 
-		if (matches.length === 0) {
-			resultsGrid.innerHTML = '';
-			emptyMsg.hidden = false;
-		} else {
-			resultsGrid.innerHTML = matches.map(renderCard).join('');
-			emptyMsg.hidden = true;
-		}
+			if (matches.length === 0) {
+				resultsGrid.innerHTML = '';
+				emptyMsg.hidden = false;
+			} else {
+				resultsGrid.innerHTML = matches.map(renderCard).join('');
+				emptyMsg.hidden = true;
+			}
+		});
 	});
 })();

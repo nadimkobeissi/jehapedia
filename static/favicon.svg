@@ -1,8 +1,1 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
-  <rect width="100" height="100" rx="20" fill="#0a1628"/>
-  <!-- Crescent moon -->
-  <circle cx="50" cy="42" r="22" fill="#d4a853"/>
-  <circle cx="58" cy="38" r="18" fill="#0a1628"/>
-  <!-- Star -->
-  <polygon points="50,68 52,74 58,74 53,78 55,84 50,80 45,84 47,78 42,74 48,74" fill="#d4a853"/>
-</svg>
+<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><rect fill="#0a1628" height="100" rx="20" width="100"/><circle cx="50" cy="42" fill="#d4a853" r="22"/><circle cx="58" cy="38" fill="#0a1628" r="18"/><path d="m50 68 2 6h6l-5 4 2 6-5-4-5 4 2-6-5-4h6z" fill="#d4a853"/></svg>
