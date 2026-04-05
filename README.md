@@ -4,6 +4,8 @@ Jehapedia is a public encyclopedia of stories of Jeha, the legendary jester-like
 
 Jehapedia will catalogue Jeha stories in Arabic, alongside English translations written by Nadim Kobeissi.
 
+Jehapedia is available at [jehapedia.org](https://jehapedia.org).
+
 ## Status
 
 I am currently in the initial stages of work on this project. Todo list:
