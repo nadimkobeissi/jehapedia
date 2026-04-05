@@ -1,0 +1,17 @@
+{{ define "main" }}
+<section class="page-header">
+	<h2 class="page-title">البحث</h2>
+	<p class="page-desc">ابحث في نوادر وحكايات جحا</p>
+</section>
+
+<section class="search-section search-section-page">
+	<div class="search-container">
+		<input type="text" id="story-search" class="search-input" placeholder="ابحث عن حكاية..." aria-label="ابحث عن حكاية" autocomplete="off" dir="rtl" autofocus>
+	</div>
+</section>
+
+<section class="stories-grid-section">
+	<div class="stories-grid" id="search-results"></div>
+	<p class="search-empty" id="search-empty" hidden>لا توجد نتائج</p>
+</section>
+{{ end }}

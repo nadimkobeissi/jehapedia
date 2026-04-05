@@ -18,6 +18,9 @@
 				{{ end }}
 			</div>
 			{{ end }}
+			{{ with .Date }}
+			<div class="story-date">{{ .Format "2 January 2006" }}</div>
+			{{ end }}
 			{{ if .Params.original }}
 			<div class="original-badge">قصّة أصليّة بقلم نديم قبيسي</div>
 			{{ end }}

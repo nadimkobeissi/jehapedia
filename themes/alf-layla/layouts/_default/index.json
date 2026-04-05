@@ -1,0 +1,14 @@
+{{- $stories := where .Site.RegularPages "Section" "stories" -}}
+[
+{{- range $i, $p := $stories -}}
+  {{- if $i }},{{ end }}
+  {
+    "title": {{ $p.Title | jsonify }},
+    "title_en": {{ with $p.Params.title_en }}{{ . | jsonify }}{{ else }}""{{ end }},
+    "url": {{ $p.RelPermalink | jsonify }},
+    "description": {{ with $p.Params.description }}{{ . | jsonify }}{{ else }}""{{ end }},
+    "tags": {{ with $p.Params.tags }}{{ . | jsonify }}{{ else }}[]{{ end }},
+    "original": {{ with $p.Params.original }}true{{ else }}false{{ end }}
+  }
+{{- end }}
+]
