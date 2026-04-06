@@ -25,11 +25,11 @@ original: true
 
 {{% english %}}
 
-Every day, Jeha could be seen strolling through the village carrying an enormous book under his arm, never once opening it.
+Every day, Jeha walked through the village with an enormous book under his arm. He never opened it.
 
 Someone asked him: "What's in that book, Jeha?"
 
-"I have no idea."
+"No idea."
 
 "Haven't you read it?"
 
@@ -37,6 +37,6 @@ Someone asked him: "What's in that book, Jeha?"
 
 "Then why do you carry it?"
 
-"Because when people see me carrying it, they make way for me."
+"When people see me carrying it, they step aside."
 
 {{% /english %}}
